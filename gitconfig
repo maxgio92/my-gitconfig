@@ -6,3 +6,11 @@
     submodule = log
 [status]
     submodulesummary = 1
+[init]
+	templateDir = /home/massi/.git-template
+
+[alias]
+bra = branch -avv
+lg = log --oneline --decorate --graph
+sts = status
+pushu = "!f() { git push -u origin `git branch --show-current`; }; f"
